@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BurgerAPp.Repository.IRepositories
+namespace BurgerAPp.Repository
 {
-    public interface IBeverageRepository
+    public interface IBurgerRepository
     {
-        public IQueryable<Beverage> GetBeverages();
-        public void AddBeverage(Beverage beverage);
-        public void DeleteBeverage(Beverage beverage);
-
+        public IQueryable<Burger> GetBurgers();
+        public void AddBurger(Burger burger);
+        public void DeleteBurger(Burger burger);
+        public Burger GetBurger(int id);
+        public void EditBurger(int id, Burger burger);
     }
 }

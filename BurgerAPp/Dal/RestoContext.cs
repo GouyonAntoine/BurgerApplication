@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using DomainModel;
+﻿using DomainModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Dal
 {
@@ -29,20 +29,5 @@ namespace Dal
             //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=FastFood;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }
-       /* protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Product>().ToTable("Products");
-            modelBuilder.Entity<Beverage>().ToTable("Beverages");
-            modelBuilder.Entity<Burger>().ToTable("Burgers");
-            modelBuilder.Entity<Dessert>().ToTable("Desserts");
-            modelBuilder.Entity<Menu>().ToTable("Menus");
-            modelBuilder.Entity<Side>().ToTable("Sides");
-
-            modelBuilder.Entity<Menu>().HasOne(m => m.Beverage);
-            modelBuilder.Entity<Menu>().HasOne(m => m.Burger);
-            modelBuilder.Entity<Menu>().HasOne(m => m.Side);
-            modelBuilder.Entity<Menu>().HasOne(m => m.Dessert);
-            base.OnModelCreating(modelBuilder);
-        }*/
     }
 }

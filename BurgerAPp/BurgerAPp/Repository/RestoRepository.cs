@@ -1,5 +1,7 @@
 ﻿using BurgerApp.Repository.IRepositories;
+using Dal;
 using DomainModel;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,7 +10,7 @@ namespace BurgerApp.Repository
     public class RestoRepository : IRestoRepository
     {
         private RestoContext context;
-        public RestoRepository(RestoRepository context)
+        public RestoRepository(RestoContext context)
         {
             this.context = context;
         }

@@ -1,4 +1,4 @@
-﻿using BurgerAPp.Repository.IRepositories;
+﻿using BurgerAPp.Repository;
 using Dal;
 using DomainModel;
 using System;
