@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace BurgerAPp.Repository.IRepositories
 {
-    public interface IBurgerRepository
+    public interface IBeverageRepository
     {
-        public IQueryable<Burger> GetBurgers();
-        public void AddBurger(Burger burger);
-        public void DeleteBurger(Burger burger);
-        public Burger GetBurger(int id);
-        public void EditBurger(int id, Burger burger);
+        public IQueryable<Beverage> GetBeverages();
+        public void AddBeverage(Beverage beverage);
+        public void DeleteBeverage(Beverage beverage);
+
     }
 }
