@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerApp", "BurgerAPp\BurgerApp.csproj", "{BEBFBDD6-6393-47EE-8F89-ED4D625E14CA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dal", "Dal", "{BF774ED7-EA0E-42C1-8E24-FD420D52C8FC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppBurger", "ConsoleAppBurger\ConsoleAppBurger.csproj", "{7CA1E55C-0709-4601-A82A-0EFB204285D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModel", "DomainModel\DomainModel.csproj", "{02F45C3E-9AED-4C76-BE85-6E56594490DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{657B2CBC-EF51-4F0C-A4F6-A6682A89835A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +29,10 @@ Global
 		{02F45C3E-9AED-4C76-BE85-6E56594490DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02F45C3E-9AED-4C76-BE85-6E56594490DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02F45C3E-9AED-4C76-BE85-6E56594490DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{657B2CBC-EF51-4F0C-A4F6-A6682A89835A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657B2CBC-EF51-4F0C-A4F6-A6682A89835A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657B2CBC-EF51-4F0C-A4F6-A6682A89835A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657B2CBC-EF51-4F0C-A4F6-A6682A89835A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

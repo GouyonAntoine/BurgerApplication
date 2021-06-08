@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerApp.csproj": {}
+    "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\Dal\\Dal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerApp.csproj": {
+    "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\Dal\\Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerApp.csproj",
-        "projectName": "BurgerApp",
-        "projectPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerApp.csproj",
+        "projectUniqueName": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\Dal\\Dal.csproj",
+        "projectName": "Dal",
+        "projectPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\Dal\\Dal.csproj",
         "packagesPath": "C:\\Users\\33627\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\obj\\",
+        "outputPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\Dal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\33627\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,9 +60,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

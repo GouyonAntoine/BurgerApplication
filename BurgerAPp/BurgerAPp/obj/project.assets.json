@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DomainModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainModel.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DomainModel/1.0.0": {
+      "type": "project",
+      "path": "../DomainModel/DomainModel.csproj",
+      "msbuildProject": "../DomainModel/DomainModel.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DomainModel >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\33627\\.nuget\\packages\\": {}
@@ -13,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerAPp.csproj",
-      "projectName": "BurgerAPp",
-      "projectPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerAPp.csproj",
+      "projectUniqueName": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerApp.csproj",
+      "projectName": "BurgerApp",
+      "projectPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\BurgerApp.csproj",
       "packagesPath": "C:\\Users\\33627\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\BurgerAPp\\obj\\",
       "projectStyle": "PackageReference",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\DomainModel\\DomainModel.csproj": {
+              "projectPath": "C:\\Users\\33627\\Documents\\Formation\\Core\\BurgerApplication\\BurgerAPp\\DomainModel\\DomainModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
