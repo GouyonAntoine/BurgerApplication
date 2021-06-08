@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DomainModel
 {
-    public class Side : Product
+    public class Burger : Product
     {
-        [Column("SideWeight")]
+        [Column("BurgerWeight")]
         public int Weight { get; set; }
-        public int SaltWeight { get; set; }
+        public int BeefWeight { get; set; }
     }
 }
