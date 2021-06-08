@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerAPp", "BurgerAPp\BurgerAPp.csproj", "{BEBFBDD6-6393-47EE-8F89-ED4D625E14CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEBFBDD6-6393-47EE-8F89-ED4D625E14CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBFBDD6-6393-47EE-8F89-ED4D625E14CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBFBDD6-6393-47EE-8F89-ED4D625E14CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBFBDD6-6393-47EE-8F89-ED4D625E14CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52469CA4-E4C8-4D71-A7D8-BF749DCF8615}
+	EndGlobalSection
+EndGlobal
