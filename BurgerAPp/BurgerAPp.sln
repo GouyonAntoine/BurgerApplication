@@ -8,6 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dal", "Dal", "{BF774ED7-EA0E-42C1-8E24-FD420D52C8FC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainModel", "DomainModel", "{EF527255-355C-46CF-8759-BB295B1A1054}"
+	ProjectSection(SolutionItems) = preProject
+		Product.cs = Product.cs
+		Side.cs = Side.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppBurger", "ConsoleAppBurger\ConsoleAppBurger.csproj", "{7CA1E55C-0709-4601-A82A-0EFB204285D8}"
 EndProject
