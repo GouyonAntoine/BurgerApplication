@@ -1,6 +1,10 @@
+using BurgerApp.Repository;
+using BurgerApp.Repository.IRepositories;
+using Dal;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,6 +27,16 @@ namespace BurgerAPp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews();
+
+            services.AddScoped<IRestoRepository, RestoRepository>();
+
+            //services.AddScoped<SchoolContext>();
+
+            services.AddDbContext<RestoContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("RestoDB"))
+            );
+
             services.AddControllersWithViews();
         }
 

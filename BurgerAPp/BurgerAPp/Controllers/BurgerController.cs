@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace BurgerApp.Controllers
 {
-    public class BurgersController : Controller
+    public class BurgerController : Controller
     {
-        private readonly ILogger<BurgersController> _logger;
+        private readonly ILogger<BurgerController> _logger;
         private IBurgerRepository _repository;
-        public BurgersController(ILogger<BurgersController> logger, IBurgerRepository repository)
+        public BurgerController(ILogger<BurgerController> logger, IBurgerRepository repository)
         {
             _logger = logger;
             _repository = repository;
