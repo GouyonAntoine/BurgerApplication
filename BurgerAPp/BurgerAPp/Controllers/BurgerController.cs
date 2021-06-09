@@ -76,7 +76,7 @@ namespace BurgerApp.Controllers
             //Asynchorne
             if (ModelState.IsValid)
             {
-                _repository.CreateAsync(burger);
+                await _repository.CreateAsync(burger);
                 return RedirectToAction(nameof(Index));
             }
             return View(burger);
@@ -128,7 +128,7 @@ namespace BurgerApp.Controllers
             {
                 try
                 {
-                    _repository.UpdateAsync(burger);
+                    await _repository.UpdateAsync(burger);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
