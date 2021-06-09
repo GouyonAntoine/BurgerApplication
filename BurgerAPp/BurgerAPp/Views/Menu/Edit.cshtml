@@ -1,0 +1,12 @@
+﻿@model DomainModel.Menu
+
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "_Layout";
+}
+
+<h2>Model.Name</h2>
+
+<div class="row">
+    @Html.Partial("_Form", Model)
+</div>

@@ -1,0 +1,47 @@
+﻿@model DomainModel.Menu
+
+@using (Html.BeginForm())
+{
+    <div class="col m6 s12">
+        <div class="input-field">
+            @Html.LabelFor(m => m.Name)
+            @Html.TextBoxFor(m => m.Name)
+        </div>
+    </div>
+    <div class="col m6 s12">
+        <div class="input-field">
+            @Html.LabelFor(m => m.Price)
+            @Html.TextBoxFor(m => m.Price)
+        </div>
+    </div>
+    <div class="col m6 s12">
+        <div class="input-field">
+            @Html.LabelFor(m => m.Description)
+            @Html.TextAreaFor((m => m.Description), htmlAttributes: new {@class="materialize-textarea"})
+        </div>
+    </div>
+    <div class="col m6 s12">
+        <div class="input-field">
+            @Html.LabelFor(m => m.Beverage)
+            @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Beverage), "Selectionner")
+        </div>
+    </div>
+    <div class="col m6 s12">
+        <div class="input-field">
+            @Html.LabelFor(m => m.Side)
+            @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Side), "Selectionner")
+        </div>
+    </div>
+    <div class="col m6 s12">
+        <div class="input-field">
+            @Html.LabelFor(m => m.Dessert)
+            @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Dessert), "Selectionner")
+        </div>
+    </div>
+    <div class="col m6 s12">
+        <div class="input-field">
+            @Html.LabelFor(m => m.Burger)
+            @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Burger), "Selectionner")
+        </div>
+    </div>
+}

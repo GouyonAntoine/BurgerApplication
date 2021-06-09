@@ -1,0 +1,9 @@
+@model DomainModel.Burger
+
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<h2>@Model.Name</h2>
+
+@Html.Partial("_Form", Model)

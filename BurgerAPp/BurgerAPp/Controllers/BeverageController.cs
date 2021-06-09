@@ -10,11 +10,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BurgerAPp.Controllers
 {
-    public class BeveragesController : Controller
+    public class BeverageController : Controller
     {
         private readonly RestoContext _context;
 
-        public BeveragesController(RestoContext context)
+        public BeverageController(RestoContext context)
         {
             _context = context;
         }

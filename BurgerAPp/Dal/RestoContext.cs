@@ -26,7 +26,7 @@ namespace Dal
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=RestoDB;Integrated Security=true");
+            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=RestoDB;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }
     }

@@ -1,0 +1,48 @@
+﻿@using DomainModel
+@model List<DomainModel.Beverage>
+
+@{
+    ViewBag.Title = "Nos boissons!";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+
+<table class="highlight">
+    <thead>
+    <tr>
+        <th>
+            Nom
+        </th>
+        <th>
+            Prix
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Beverage beverage in Model)
+    {
+        <tr>
+            @beverage.Name
+        </tr>
+        <tr>
+            @beverage.Price &euro;
+        </tr>
+        <tr>
+            @beverage.Description
+        </tr>
+        <tr>
+            @Html.ActionLink("Modifier", "Edit", "Beverage", beverage.Id, new {@class = "btn"})
+            @Html.ActionLink("Supprimer", "Edit", "Beverage", beverage.Id, new {@class = "btn background-red"})
+        </tr>
+    }
+    </tbody>
+</table>

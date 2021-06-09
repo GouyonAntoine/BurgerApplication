@@ -1,0 +1,55 @@
+﻿@model DomainModel.Beverage
+
+@{
+    ViewBag.Title = "Nos Boissons!";
+}
+
+<h2>title</h2>
+
+
+<div class="row">
+    @using (Html.BeginForm())
+    {
+        <div class="col m6 s12">
+            <div class="input-field">
+                @Html.LabelFor(b => b.Name)
+                @Html.TextBoxFor(b => b.Name)
+            </div>
+        </div>
+        <div class="col m6 s12">
+            <div class="input-field">
+                @Html.LabelFor(b => b.Price)
+                @Html.TextBoxFor(b => b.Price)
+            </div>
+        </div>
+        <div class="col m6 s12">
+            <div class="input-field">
+                @Html.TextAreaFor(b => b.Description, new {@class="materialize-textarea"})
+            </div>
+        </div>
+        <div class="col m6 s12">
+            <div class="input-field">
+                @* @Html.LabelFor(m => m.Beverage) *@
+                @* @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Beverage), "Selectionner") *@
+            </div>
+        </div>
+        <div class="col m6 s12">
+            <div class="input-field">
+                @* @Html.LabelFor(m => m.Side) *@
+                @* @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Side), "Selectionner") *@
+            </div>
+        </div>
+        <div class="col m6 s12">
+            <div class="input-field">
+                @* @Html.LabelFor(m => m.Dessert) *@
+                @* @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Dessert), "Selectionner") *@
+            </div>
+        </div>
+        <div class="col m6 s12">
+            <div class="input-field">
+                @* @Html.LabelFor(m => m.Burger) *@
+                @* @Html.DropDownListFor(m => m.Beverage, new SelectList(ViewBag.Burger), "Selectionner") *@
+            </div>
+        </div>
+    }
+</div>

@@ -1,71 +1,72 @@
-﻿@using DomainModel;
-@model List<Burger>
+@model List<DomainModel.Burger>
+
+@{
+    ViewBag.Title = "Nos Burgers!";
+}
 
 <h2>@ViewBag.Title</h2>
 
 <div class="row">
     <div class="col s12 center">
-        @Html.ActionLink("Ajouter", "Create", "Burger")
+        @Html.ActionLink("Ajouter", "Create", "Burger", null, new {@class = "btn wave-effect"})
     </div>
 </div>
 
 <table class="highlight">
     <thead>
-        <tr>
-            <th>
-                Nom
-            </th>
-            <th>
-                Description
-            </th>
-            <th>
-                Prix
-            </th>
-            <th>
-                Poids
-            </th>
-            <th>
-                Viande
-            </th>
-            <th>
-                Actions
-            </th>
-        </tr>
+    <tr>
+        <th>
+            Nom
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Prix
+        </th>
+        <th>
+            Poids
+        </th>
+        <th>
+            Viande
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
     </thead>
     <tbody>
-        @if (Model.Count > 0)
-        {
-            @foreach (Burger burger in Model)
-            {
-                <tr>
-                    <td>
-                        @burger.Name
-                    </td>
-
-                    <td>
-                        @burger.Description
-                    </td>
-                    <td nowrap>
-                        @burger.Price &euro;
-                    </td>
-                    <td>
-                        @burger.Weight
-                    </td>
-                    <td>
-                        @burger.BeefWeight
-                    </td>
-                    <td>
-                        @Html.ActionLink("Modifier", "Edit", "Burger", burger.Id)
-                        @Html.ActionLink("Supprimer", "Delete", "Burger", burger.Id)
-                    </td>
-                </tr>
-            }
-        }
-        else
+    @if (Model.Count > 0)
+    {
+        @foreach (DomainModel.Burger burger in Model)
         {
             <tr>
-                <td colspan="6">Aucun burger n'est disponnible pour le moment!</td>
+                <td>
+                    @burger.Name
+                </td>
+
+                <td>
+                    @burger.Description
+                </td>
+                <td>
+                    @burger.Price &euro;
+                </td>
+                <td>
+                    @burger.Weight
+                </td>
+                <td>
+                    @burger.BeefWeight
+                </td>
+                <td>
+                    @Html.ActionLink("Modifier", "Edit", "Burger", burger.Id, new {@class = "btn wave-effect"})
+                    @Html.ActionLink("Supprimer", "Delete", "Burger", burger.Id, new {@class = "btn wave-effect background-red"})
+                </td>
             </tr>
         }
+    }
+    else
+    {
+        <h4>Aucun burger n'est disponnible pour le moment!</h4>
+    }
     </tbody>
 </table>

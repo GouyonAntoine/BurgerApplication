@@ -1,0 +1,45 @@
+﻿@using DomainModel
+@model List<DomainModel.Menu>
+
+@{
+    ViewBag.Title = "Nos Menus!";
+    Layout = "_Layout";
+}
+
+
+<table class="highlight">
+    <thead>
+    <tr>
+        <th>
+            Nom
+        </th>
+        <th>
+            Prix
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Menu menu in Model)
+    {
+        <tr>
+            @menu.Name
+        </tr>
+        <tr>
+            @menu.Price &euro;
+        </tr>
+        <tr>
+            @menu.Description
+        </tr>
+        <tr>
+            @* @Html.ActionLink("Modifier", "Edit", "Menu", menu.Id, new {@class = "btn"}) *@
+            @* @Html.ActionLink("Supprimer", "Edit", "Menu", menu.Id, new {@class = "btn background-red"}) *@
+        </tr>
+    }
+    </tbody>
+</table>

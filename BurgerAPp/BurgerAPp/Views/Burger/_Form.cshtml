@@ -1,0 +1,41 @@
+@model DomainModel.Burger
+
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="input-field">
+                @Html.LabelFor(b => b.Name)
+                @Html.TextBoxFor(b => b.Name)
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="input-field">
+                @Html.LabelFor(b => b.Price)
+                @Html.TextBoxFor(b => b.Price)
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="input-field">
+                @Html.LabelFor(b => b.Description)
+                @Html.TextAreaFor(b => b.Description, htmlAttributes: new {@class = "materialize-textarea"})
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="input-field">
+                @Html.LabelFor(b => b.BeefWeight)
+                @Html.TextBoxFor(b => b.BeefWeight)
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="input-field">
+                @Html.LabelFor(b => b.Weight)
+                @Html.TextBoxFor(b => b.Weight)
+            </div>
+        </div>
+        <div class="col s12 center">
+            <button class="btn wave-effect">Sauvegarder</button>
+        </div>
+    </div>
+}
