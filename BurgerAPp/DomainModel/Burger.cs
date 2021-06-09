@@ -12,5 +12,6 @@ namespace DomainModel
         [Column("BurgerWeight")]
         public int Weight { get; set; }
         public int BeefWeight { get; set; }
+        //public int Stockpiled { get; set; }
     }
 }

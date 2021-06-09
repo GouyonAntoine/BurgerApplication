@@ -8,7 +8,7 @@ namespace BurgerAPp.Repository
 {
     public interface IBurgerRepository
     {
-        public IQueryable<Burger> GetBurgers();
+        public List<Burger> GetBurgers();
         public void AddBurger(Burger burger);
         public void DeleteBurger(Burger burger);
         public Burger GetBurger(int id);

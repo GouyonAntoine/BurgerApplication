@@ -27,9 +27,9 @@ namespace BurgerAPp.Repository
             context.SaveChanges();
         }
 
-        public IQueryable<Burger> GetBurgers()
+        public List<Burger> GetBurgers()
         {
-            return context.Burgers;
+            return context.Burgers.ToList();
         }
 
         public Burger GetBurger(int id)

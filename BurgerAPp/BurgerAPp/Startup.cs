@@ -1,5 +1,6 @@
 using BurgerApp.Repository;
 using BurgerApp.Repository.IRepositories;
+using BurgerAPp.Repository;
 using Dal;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,8 @@ namespace BurgerAPp
             services.AddControllersWithViews();
 
             services.AddScoped<IRestoRepository, RestoRepository>();
+            services.AddScoped<IBurgerRepository, BurgerRepository>();
+            services.AddScoped<IBeverageRepository, BeverageRepository>();
 
             //services.AddScoped<SchoolContext>();
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dal;
+using System;
 
 namespace ConsoleAppBurger
 {
@@ -6,7 +7,10 @@ namespace ConsoleAppBurger
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (RestoContext context = new RestoContext())
+            {
+                context.Initialize(true);
+            }
         }
     }
 }
